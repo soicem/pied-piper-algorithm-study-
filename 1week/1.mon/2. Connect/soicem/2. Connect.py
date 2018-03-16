@@ -10,7 +10,7 @@ with open("connect.inp", 'r') as f:
     x = (x2 - x1) * t + x1
     y = (y2 - y1) * t + y1
     z = (z2 - z1) * t + z1
-    result = int(math.sqrt((c1 - x) * (c1 - x) + (c2 - y) * (c2 - y) + (c3 - z) * (c3 - z)))
+    result = math.ceil((math.sqrt((c1 - x) * (c1 - x) + (c2 - y) * (c2 - y) + (c3 - z) * (c3 - z))))
 
 with open("connect.out", 'w') as f:
     f.write(str(result))
